@@ -1,0 +1,1 @@
+  document.getElementById("pg").innerHTML="Welcome User"+email_id+" please ,check your email for varification";

@@ -1,0 +1,10 @@
+user_id = user_id ? user_id : fb.database().ref().child('users').child(key).setValue(user);
+  updates[user_id] = $('form').getFormData();
+        fb.database().ref().child('users').update(updates);
+        window.alert("sign up successfully! Now go to your email for confirmation ");
+<ul>
+  <li><a href="#home">About</a></li>
+  <li><a href="#news">Cart</a></li>
+  <li><a href="#contact">Sign in</a></li>
+  <li><a href="#about">Home</a></li>
+</ul>

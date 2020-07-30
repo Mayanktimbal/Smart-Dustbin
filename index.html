@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head> <title >Homeopathy</title>
+<link rel="stylesheet" type="text/css" href="css/signup.css">
+<link rel="stylesheet" type="text/css" href="css/Navigation.css">
+</head>
+
+<body>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+
+<script type="text/javascript" src="javascript/commonfirebase.js"></script>
+
+<script type="text/javascript" src="javascript/login.js"></script>
+
+
+
+
+<a  href="index.html"><h3 style="display: inline;">Homeopath</h3></a>
+<br>
+<ul>
+
+  <li><a href="signup.html">Sign UP</a></li>
+ 
+</ul>
+
+
+<div id="main-div" style="display:block; ">
+
+<h1 style="text-align:center; color:white;" >Login</h1>
+
+
+ <form action="" >
+<div id="form">
+   
+     <input   id="number" type="tel" pattern="^\d{10}$" name="number"  placeholder=" number" required></div>
+     <div id="recaptcha-container"></div>
+     <br>
+<br>
+  <button type="button" onclick="numberverifyindatabase()">SendCode</button>
+<br><br>
+  
+	
+  
+
+<br>
+
+</div>
+  
+</form> 
+<br><br>
+
+<div id="verification" style="display: none">
+<h1 style="text-align:center; color:white;" >Enter verification code</h1>
+<form>
+  
+  <input type="text" id="verificationCode" placeholder="Enter verification code">
+  <br><br>
+  <button type="button" onclick="codeverify()" >verify code</button>
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+
+
+</body>
+</html>
