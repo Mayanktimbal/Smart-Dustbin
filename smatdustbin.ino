@@ -10,7 +10,7 @@ long agalduration;
 int agaldistance;
 
 int servopin=13;
-Servo servo;
+Servo servo;              // create servo object to control a servo
 
 
 void setup() {
@@ -18,8 +18,8 @@ void setup() {
  pinMode(heightechopin,INPUT);
   pinMode(agaltrigpin,OUTPUT);
  pinMode(agalechopin,INPUT);
- servo.attach(servopin);
- Serial.begin(9600);
+ servo.attach(servopin);         // attaches the servo on pin 9 to the servo object
+ Serial.begin(9600);             
 
 }
 
@@ -51,13 +51,13 @@ Serial.println(agaldistance);
 if(agaldistance<=12)
 {
    servo.write(0);
- delay(1000);
+ delay(1000);                  //delay of 1 sec
  
  servo.write(180);
- delay(5000);
+ delay(5000);                 //delay of 5 sec
 
   servo.write(0);
- delay(1000);
+ delay(1000);                  //delay of 1 sec 
   
   
   }
